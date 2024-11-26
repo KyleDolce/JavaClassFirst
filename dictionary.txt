@@ -9,3 +9,8 @@ $ dollar sign
 . dot
 : colon
 ; semi colon
+
+Commiting file cmd:
+git add .
+git commit -m "This is the first commit"
+git push -u origin main

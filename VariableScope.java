@@ -1,0 +1,20 @@
+public class VariableScope {
+    
+    int instanceVariable =10;
+
+    static int staticVariable = 20;
+
+    public void showLocalVariable(){
+        int localVariable =30;
+        System.out.println("Local Variable: "+localVariable);
+        System.out.println("instance Variable: " +instanceVariable);
+        System.out.println("static Variable: "+staticVariable);
+
+    }
+
+    public static void main(String[] args) {
+        VariableScope variableScope = new VariableScope();
+        variableScope.showLocalVariable();
+
+    }
+}

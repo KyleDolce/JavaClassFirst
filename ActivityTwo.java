@@ -17,37 +17,29 @@ public class ActivityTwo {
         System.out.println("Car Price: RM" + carPrice);
     }
 
-    public double getCarPrice() {
-        return carPrice;
-    }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        ActivityTwo[] cars = new ActivityTwo[3];
+        Scanner scan = new Scanner(System.in);
+        System.err.println("How many car would you like to register?");
+        int n = scan.nextInt();
+        scan.nextLine();
+        double totalPrice=0;
 
-        for (int i = 0; i < cars.length; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.println("Enter details for car " + (i + 1) + ":");
             System.out.print("Car Model: ");
-            String carModel = scanner.nextLine();
+            String carModel = scan.nextLine();
             System.out.print("Car Name: ");
-            String carName = scanner.nextLine();
+            String carName = scan.nextLine();
             System.out.print("Car Price: RM");
-            double carPrice = scanner.nextDouble();
-            scanner.nextLine();
+            double carPrice = scan.nextDouble();
+            scan.nextLine();
 
-            cars[i] = new ActivityTwo(carModel, carName, carPrice);
+            totalPrice += carPrice;
         }
 
-        double totalPrice = 0;
-        for (ActivityTwo car : cars) {
-            System.out.println();
-            System.out.println();
-            car.displayCarDetails();
-            System.out.println();
-            totalPrice += car.getCarPrice();
-        }
 
-        double averagePrice = totalPrice / cars.length;
+        double averagePrice = totalPrice / n;
         System.out.println("Average Car Price: RM" + averagePrice);
     }
 }

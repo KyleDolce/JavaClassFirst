@@ -33,7 +33,7 @@ public class ActivityTwo {
             String carName = scanner.nextLine();
             System.out.print("Car Price: RM");
             double carPrice = scanner.nextDouble();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             cars[i] = new ActivityTwo(carModel, carName, carPrice);
         }

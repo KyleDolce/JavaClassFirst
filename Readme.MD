@@ -5,3 +5,5 @@ Create a new private and public classes that can get at least 3 cars, model, mak
 2.2 Do the same as 2.1 instead of if and else staement use tenary operator.
 
 3. Create a loop that uses the for lloop which begins from the number 1 and adds single number each time, it continues till it breaks at number 26. USE BREAK and Continue at 14.
+
+4.Create a matrix with 3 rows and 3 columns which comtains the car models and prices then fetch the car which values above RM 50000 and portray it in the terminal.

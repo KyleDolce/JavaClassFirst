@@ -40,8 +40,8 @@ public class Activity4 {
 
         double averagePrice = totalPrice / n;
         System.out.println("Average Car Price: RM" + averagePrice);
-        String result= (averagePrice>=100000) ? "It is expensive as heck" 
-        : (averagePrice>49999&&averagePrice<100000) ? "It is normal Market Price" 
+        String result= (averagePrice>=100000) ? "It is expensive as heck"
+        : (averagePrice>49999&&averagePrice<100000) ? "It is normal Market Price"
         : "It is CHEAPPPPPPP";
         System.out.println(result);
 

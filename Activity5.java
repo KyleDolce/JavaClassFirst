@@ -4,12 +4,13 @@ public class Activity5 {
         while(counter>0){
             if(counter==26){
                 break;
-            } else if(counter==14){
-                continue;
-            } else {
-                System.out.println("Counter: "+counter);
-                counter++;
             }
+            if(counter==14){
+                counter++;
+                continue;
+            }
+            System.out.println("Counter: "+counter);
+                counter++;
         }
     }
 }

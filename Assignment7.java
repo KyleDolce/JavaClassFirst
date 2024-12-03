@@ -35,8 +35,8 @@ public class Assignment7 {
                     }
                 }
 
-                for (int x = 0; x < 2; x++) {
-                    for (int y=0; y<3; y++){
+                for (int x = 0; x < 3; x++) {
+                    for (int y=0; y<4; y++){
                         String num =  null;
                         c1[x][y]= String.valueOf(num);
                     }

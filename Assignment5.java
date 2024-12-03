@@ -6,6 +6,7 @@ public class Assignment5 {
         String [][]cheap=new String[5][2];
         int luxuryIndex=0;
         int cheapIndex=0;
+        int aa=0;
 
         for (int i = 0; i < 5; i++) {
             System.out.println("Please input your car Price of car "+(i+1)+" :");

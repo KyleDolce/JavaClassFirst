@@ -13,3 +13,9 @@ Create a new private and public classes that can get at least 3 cars, model, mak
 6. Use scanner to get the day number and the result of the switch must be portrayed in the console.
 
 7. cReate new file that the scanner get the value for the switch, if the user choose 1 he/she will enter stage that he/she needs to enter a value for 3*4, if the user choses 2 he/she will ener the stages that he/she need to enter values for 2*3 matrix. The result of the user must be shown regardless of the option.
+
+8. Pass the person age and name and height and weight using scanner, use the encapsulation to have set and get data and use he following formula to calculate bmi: (height -100)/weight
+
+The final resuult in console must be the following:
+
+the person name is ${generated_name} and he/she is {generated_age} years old and his/her bmi is ${calculated_value_of_bmi}

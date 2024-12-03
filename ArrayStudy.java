@@ -7,7 +7,7 @@ public class ArrayStudy {
         matrix[1][0] = 5; matrix[1][1] = 6; matrix[1][2] = 7; matrix[1][3] = 8;
         matrix[2][0] = 9; matrix[2][1] = 10; matrix[2][2] = 11; matrix[2][3] = 12;
 
-        int[][] matrix2 = {{1, 2, 3}, {4, 5, 6}};
+        int[][] matrix2 = {{1, 2, 3, 4}, {4, 5, 6, 7}};
 
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {

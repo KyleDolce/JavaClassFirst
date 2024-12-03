@@ -24,23 +24,33 @@ public class Assignment5 {
         }
 
         System.out.println("VIP Cars:");
+        boolean hasLuxuryCar = false;
         for (String[] i : luxury) {
             if (i[0] != null) {
+                hasLuxuryCar = true;
                 for (String j : i) {
                     System.out.print(j + " ");
                 }
                 System.out.println();
             }
         }
+        if(!hasLuxuryCar){
+            System.out.println("No Luxury cars available");
+        }
 
         System.out.println("Cheap Cars:");
+        boolean hasCheapCars = false;
         for (String[] i : cheap) {
             if (i[0] != null) {
+                hasCheapCars = true;
                 for (String j : i) {
                     System.out.print(j + " ");
                 }
                 System.out.println();
             }
+        }
+        if(!hasCheapCars){
+            System.out.println("No Cheap cars available");
         }
         sc.close();
     }

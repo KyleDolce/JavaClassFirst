@@ -1,17 +1,23 @@
-import java.util.*;
-class Toyota{
+import java.util.Scanner;
+class Cars{
+    void vroom(){
+        System.out.println("No car is selected");
+    }
+}
+
+class Toyota extends Cars{
     void vroom(){
         System.out.println("The car cost RM 25,000");
     }
 }
 
-class BMW{
+class BMW extends Cars{
     void vroom(){
         System.out.println("The car cost RM 85,000");
     }
 }
 
-class Tesla{
+class Tesla extends Cars{
     void vroom(){
         System.out.println("The car cost RM 75,000");
     }
@@ -24,16 +30,16 @@ public class Assignment10 {
         String car = read.nextLine();
         switch(car){
             case "Toyota":
-                Toyota toyota = new Toyota();
-                toyota.vroom();
+                Cars selectCars = new Toyota();
+                selectCars.vroom();
                 break;
             case "BMW":
-                BMW bmw = new BMW();
-                bmw.vroom();
+                Cars selectCars2 = new BMW();
+                selectCars2.vroom();
                 break;
             case "Tesla":
-                Tesla tesla = new Tesla();
-                tesla.vroom();
+                Cars selectedCars3 = new Tesla();
+                selectedCars3.vroom();
                 break;
         }
         read.close();

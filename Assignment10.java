@@ -41,6 +41,9 @@ public class Assignment10 {
                 Cars selectedCars3 = new Tesla();
                 selectedCars3.vroom();
                 break;
+            default:
+                System.out.println("Invalid car input");
+                break;
         }
         read.close();
     }
